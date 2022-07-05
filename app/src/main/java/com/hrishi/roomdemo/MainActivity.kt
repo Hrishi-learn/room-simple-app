@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun updateRecordDialog(id:Int,employeeDao:EmployeeDao){
-        var updateDialog=Dialog(this)
+        var updateDialog=Dialog(this,R.style.Theme_Dialog)
         updateDialog.setCancelable(false)
         var updateBinding=CustomDialogBinding.inflate(layoutInflater)
         updateDialog.setContentView(updateBinding.root)
